@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+	.setRight {
+  	    float: right;
+	}
+	.advanced {
+  	    color: white;
+	    background-color: blue;
+	}
+	.section {
+	    position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+	}
+    </style>
+    <head>
+        <title>Advanced Search</title>
+    </head>
+    <body>
+	<button onclick="window.location.href = 'index.html';" class="setRight">Google Search</button>
+        <form action="https://google.com/search" class ="section">
+	    <div>
+		<label>all these words:</label>
+        	<input type="text" name="as_q">
+	    </div>
+	    <div>
+		<label>this exact word or phrase:</label>
+		<input type="text" name="as_epq">
+	    </div>
+	    <div>
+		<label>any of these words:</label>
+		<input type="text" name="as_oq">
+	    </div>
+	    <div>
+		<label>none of these words:</label>
+		<input type="text" name="as_eq">
+	    </div>
+	    <div>
+        	<input type="submit" value="Advanced Search" class="advanced">
+	    </div>
+        </form>
+    </body>
+</html>
